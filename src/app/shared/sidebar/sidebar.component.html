@@ -1,0 +1,38 @@
+<div class="router">
+  <div class="caja">
+    <h1>Paises-App</h1>
+  </div>
+  <hr />
+  <h5>Busquedas</h5>
+  <hr />
+  <ul class="list-group lista">
+    <li
+      routerLink=""
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="list-group-item"
+    >
+      Buscar País
+    </li>
+    <li routerLink="region" routerLinkActive="active" class="list-group-item">
+      Buscar por Continente
+    </li>
+    <li routerLink="capital" routerLinkActive="active" class="list-group-item">
+      Buscar por Capital
+    </li>
+    <li
+      routerLink="subregion"
+      routerLinkActive="active"
+      class="list-group-item"
+    >
+      Buscar por SubRegión
+    </li>
+    <li
+      routerLink="organizacion"
+      routerLinkActive="active"
+      class="list-group-item"
+    >
+      Buscar por Organización
+    </li>
+  </ul>
+</div>

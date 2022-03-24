@@ -1,0 +1,28 @@
+<div class="animate__animated animate__fadeIn animate__faster">
+  <h2>
+    Por Organizacion:<small> {{ organizacionActiva | titlecase }}</small>
+  </h2>
+  <hr />
+
+  <h5>Seleccione la Organización:</h5>
+
+  <div class="row">
+    <div class="col">
+      <button
+        *ngFor="let organizacion of organizaciones"
+        [class]="changeRegionActiva(organizacion)"
+        (click)="activarRegion(organizacion)"
+      >
+        {{ organizacion }}
+      </button>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div *ngIf="paises.length > 0" class="row">
+  <div class="col">
+    <app-organizacion-tabla [organizaciones]="paises"></app-organizacion-tabla>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<form (ngSubmit)="buscar()" autocomplete="on">
+  <div class="input-group">
+    <input
+      type="text"
+      name="termino"
+      [(ngModel)]="termino"
+      (input)="teclaPresionada()"
+      [placeholder]="placeholder"
+      class="form-control"
+    />
+    <span class="input-group-btn">
+      <button (click)="buscar()" class="btn btn-primary">Buscar</button>
+    </span>
+    <hr />
+  </div>
+</form>

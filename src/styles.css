@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+.lista {
+  cursor: pointer;
+}
+
+.small-flag {
+  width: 50px;
+}
+
+footer {
+  bottom: 0;
+  height: 25px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 85vh;
+  position: relative;
+}
+
+h1,
+h2,
+h5,
+p,
+a,
+td,
+th {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+th,
+td,
+tr,
+thead,
+tbody {
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
